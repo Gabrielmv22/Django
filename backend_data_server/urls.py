@@ -22,5 +22,5 @@ from homepage import views
 urlpatterns = [
    path("admin/", admin.site.urls),
    path("homepage/", include("homepage.urls")),
-   path('', views.index, name='raiz'),
+   path('', include('dashboard.urls')),
 ]
